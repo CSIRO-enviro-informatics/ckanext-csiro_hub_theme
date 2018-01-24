@@ -1,0 +1,28 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content box">
+  <header>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Metadata Organisation Tool") }}</h1>
+      <p>
+        {% trans %}
+        Welcome to the OzNome for Water experimental data asset register! Please 
+        <a href="/user/login">log in</a> and begin to explore the site.
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </header>
+
+  {% block home_image %}
+    <section class="featured media-overlay hidden-phone">
+      {# <h2 class="media-heading">{% block home_image_caption %}{{ _("Feature datasets here") }}{% endblock %}</h2> #}
+      {% block home_image_content %}
+        {#<a class="media-image" href="#">#}
+          <img src="{{ h.url_for_static('/images/oznome-aust-small.png') }}" alt="OzNome Data Image" width="420" height="220" />
+        {#</a>#}
+      {% endblock %}
+    </section>
+  {% endblock %}
+</div>

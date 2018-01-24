@@ -1,0 +1,11 @@
+.ie8 .hero,
+.ie7 .hero {
+  background: url("/images/background-riverbank.png");
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background: url("/images/background-riverbank.png");
+  }
+}
+
