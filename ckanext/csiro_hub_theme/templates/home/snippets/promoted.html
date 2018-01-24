@@ -5,11 +5,19 @@
     {% if intro %}
       {{ h.render_markdown(intro) }}
     {% else %}
-      <h1 class="page-heading">{{ _("Metadata Organisation Tool") }}</h1>
+      <h1 class="page-heading">{{ _("CSIRO Digital Asset Registry") }}</h1>
       <p>
         {% trans %}
-        Welcome to the OzNome for Water experimental data asset register! Please 
-        <a href="/user/login">log in</a> and begin to explore the site.
+        Welcome to the CSIRO Land and Water Digital Asset Registry. 
+	The Digital Asset Registry allows CSIRO users to register 
+	digital assets for discovery by others. 
+	This registry is a staging platform for digital assets 
+	not considered 'production-ready' or not owned by CSIRO. 
+	For those resources, please consider depositing those digital assets 
+	in the CSIRO's Data Access Portal (DAP) at <a href="http://data.csiro.au/dap">http://data.csiro.au/dap</a>.
+	Please 
+        <a href="/user/login">log in</a> using your CSIRO NEXUS credentials 
+	to register digital assets.
         {% endtrans %}
       </p>
     {% endif %}
@@ -20,7 +28,7 @@
       {# <h2 class="media-heading">{% block home_image_caption %}{{ _("Feature datasets here") }}{% endblock %}</h2> #}
       {% block home_image_content %}
         {#<a class="media-image" href="#">#}
-          <img src="{{ h.url_for_static('/images/oznome-aust-small.png') }}" alt="OzNome Data Image" width="420" height="220" />
+		{# <img src="{{ h.url_for_static('/images/oznome-aust-small.png') }}" alt="OzNome Data Image" width="420" height="220" /> #}
         {#</a>#}
       {% endblock %}
     </section>
