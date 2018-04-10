@@ -14,3 +14,21 @@
    max-height: 50px
 }
 
+
+label:after {
+   content: "" !important;
+}
+
+label .popover-content {
+   text-decoration: none;
+   font-weight: normal;
+   font-style: normal;
+}
+
+label i {
+   color: #BBBBBB ;
+}
+
+.popover .popover-content {
+    word-break: normal !important;
+}
