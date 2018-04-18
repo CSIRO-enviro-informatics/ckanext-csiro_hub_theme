@@ -41,3 +41,41 @@ label i {
 .homepage.layout-1 .row1 .col2 {
    position: relative;
 }
+
+.primary-full-width {
+   width: 100%;
+}
+
+.stages {
+    margin: -10px 0px  10px
+}
+
+.panel-title a {
+    text-decoration: none;
+
+
+}
+
+.inline-box {
+ display: inline-block;
+   min-width: 350px;
+}
+
+.asset-owner {
+   min-width: 400px;
+
+}
+
+.author {
+  width: 300px;
+}
+
+.maintainer{
+  width: 300px;
+}
+
+.asset-status div.controls select {
+  width: 380px;
+}
+   
+
