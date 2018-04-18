@@ -10,19 +10,25 @@
         {% trans %}
         The CSIRO Land and Water Digital Asset Registry
 	allows CSIRO users to register 
-	digital assets for discovery by others. 
+	digital assets for audit purposes 
+        and discovery by CSIRO internal staff. 
       </p>
       <p>
 	This registry serves as a platform for registering
-	digital assets not considered 'production-ready' 
-	or not owned by CSIRO and discovery of previously registered
-	assets. 
+	digital assets that are not considered appropriate for 'external-release' 
+	or not owned by CSIRO but used by research projects (e.g. licensed data).
 	Please consider depositing 'production-ready' digital assets 
 	in the CSIRO's Data Access Portal (DAP) at <a href="http://data.csiro.au/dap">http://data.csiro.au/dap</a>.
       </p>
-      <p>
-	To get started with registering digital assets via this platform, 
-        <a href="/user/login">log in here</a> using your CSIRO NEXUS credentials.
+      <p>This registry facilitates discovery of other relevant CSIRO digital assets 
+         previously registered on other systems - internal (e.g. CSIRO DAP), or external (e.g. Dryad, data.gov.au). 
+      </p>
+      <div class="vertical-space"></div>
+       <hr/>
+      <div>
+         <a href="/user/login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login to register an asset</a>
+         <a href="/dataset" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">View all assets</a>
+      </div>
         {% endtrans %}
       </p>
     {% endif %}

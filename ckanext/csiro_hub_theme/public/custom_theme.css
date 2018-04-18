@@ -32,3 +32,12 @@ label i {
 .popover .popover-content {
     word-break: normal !important;
 }
+
+.search-form .search-input.search-giant button {
+   margin-top: -14px;
+}
+
+
+.homepage.layout-1 .row1 .col2 {
+   position: relative;
+}
