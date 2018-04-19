@@ -1,14 +1,52 @@
 .ie8 .hero,
 .ie7 .hero {
-  background: url("/images/background-riverbank.png");
+  background: url("/images/bunker_bay.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+
 }
 
 @media (min-width: 768px) {
   .hero {
-    background: url("/images/background-riverbank.png");
+    /*background: url("/images/background-riverbank.png");*/
+    background: url("/images/bunker_bay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+
   }
 }
 
+
+@media (min-height: 500px) {
+   .hero.homepage  {
+  	min-height: 400px;
+   }
+}
+
+@media (min-height: 600px) {
+   .hero.homepage  {
+  	min-height: 500px;
+   }
+}
+
+@media (min-height: 800px) {
+   .hero.homepage  {
+  	min-height: 700px;
+   }
+}
+
+@media (min-height: 1000px) {
+   .hero.homepage  {
+  	min-height: 900px;
+   }
+}
+
+@media (min-height: 1000px) {
+   .hero.homepage  {
+  	min-height: 900px;
+   }
+}
 
 .logo img {
    max-height: 50px
@@ -36,6 +74,7 @@ label i {
 .search-form .search-input.search-giant button {
    margin-top: -14px;
 }
+
 
 
 .homepage.layout-1 .row1 .col2 {
