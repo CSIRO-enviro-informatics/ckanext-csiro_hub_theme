@@ -7,30 +7,45 @@
     {% else %}
       <h1 class="page-heading">{{ _("Welcome") }}</h1> 
       <p>
-        {% trans %}
         The CSIRO Land and Water Digital Asset Registry
 	allows CSIRO users to register 
 	digital assets for audit purposes 
         and discovery by CSIRO internal staff. 
       </p>
+
+      <h4>What is a 'digital asset'?</h4>
+      <p>
+         Digital Assets are self-contained digital objects that are of value to an 
+         individual or an organisation, such as datasets, software, web sites,  
+         web services and other digital platforms.
+      </p>
+      <h4>What is this registry for?</h4>
       <p>
 	This registry serves as a platform for registering
 	digital assets that are not considered appropriate for 'external-release' 
 	or not owned by CSIRO but used by research projects (e.g. licensed data).
-	Please consider depositing 'external-release' ready digital assets or if you have
-	repository requirements for your data 
-	in the CSIRO's Data Access Portal (DAP) at <a href="http://data.csiro.au/dap">http://data.csiro.au/dap</a>.
       </p>
       <p>This registry facilitates discovery of other relevant CSIRO digital assets 
          previously registered on other systems - internal (e.g. CSIRO DAP), or external (e.g. Dryad, data.gov.au). 
       </p>
+      <h4>What about assets that are suitable for external release?</h4>
+      <p>
+	Please consider depositing 'external-release' ready digital assets or if you have
+	repository requirements for your data 
+	in the CSIRO's Data Access Portal (DAP) at <a href="http://data.csiro.au/dap">http://data.csiro.au/dap</a>.
+      </p>
+
       <div class="vertical-space"></div>
        <hr/>
       <div>
+
+         {% if c.userobj %}
+         <a href="/dashboard" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">My dashboard</a>
+         {% else %}
          <a href="/user/login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login to register an asset</a>
+         {% endif %}
          <a href="/dataset" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">View all assets</a>
       </div>
-        {% endtrans %}
       </p>
     {% endif %}
   </header>
