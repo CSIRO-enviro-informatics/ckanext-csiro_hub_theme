@@ -203,3 +203,11 @@ label i {
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
 }
+
+.leaflet-draw-toolbar a.leaflet-draw-draw-rectangle {
+    background-image: url(../img/pencil.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50% !important;
+    background-size: 12px 12px;
+    border-radius: 4px;
+}
