@@ -12,6 +12,8 @@ ckan.module('csirohubtheme_search_kn', function ($) {
             console.log(this);
             console.log("this.options");
             console.log(this.options);
+
+            $(.kn-search-results).append("hello");
         }
     };
 });
