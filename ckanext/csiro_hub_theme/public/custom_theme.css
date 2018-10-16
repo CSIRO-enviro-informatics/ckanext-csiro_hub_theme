@@ -1,3 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body{
+   font-family: 'Open Sans',serif;
+   font-size: 1em;
+   
+}
+
+p {
+   letter-spacing: 0.2px;
+}
+
+h1 {
+   font-size: 1.4em;
+   letter-spacing: 0.3px;
+}
+h2 {
+   font-size: 1.3em;
+   letter-spacing: 0.3px;
+}
+h3 {
+   font-size: 1.2em;
+   letter-spacing: 0.3px;
+
+}
+h4 {
+   font-size: 1.1em;
+   letter-spacing: 0.3px;
+}
+
 .ie8 .hero,
 .ie7 .hero {
   background: url("/images/bunker_bay.jpg");
