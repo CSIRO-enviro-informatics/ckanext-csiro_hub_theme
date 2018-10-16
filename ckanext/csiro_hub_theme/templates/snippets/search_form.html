@@ -78,11 +78,22 @@
 </form>
 
 {% if show_empty and count == 0 and not error %}
-    <p class="extra">Please try another search.</p>
+    <p class="extra">
+    Sorry, we couldn't find any datasets that match your search. Please try a different search term.
+    </p>
+
+
     {% block search_external %}
       {% resource 'csiro_hub_theme/csirohubtheme_search.js' %}
-
-      <div class="kn-search-results" data-module="csirohubtheme_search_kn" data-module-query="{{ query }}">
+      <div class='search-alternate-options'>
+         <p>Alternatively, you might want to try these options:</p>
+            <ul class='search-alternate-options-list' data-module="csirohubtheme_search_alternate" data-module-query="{{ query }}">
+               <li>Suggest a dataset: <a href="/datarequest/new">Click here to post a data request</a></li>
+            </ul>
+            <div class="dap-search-results" data-module="csirohubtheme_search_dap" data-module-query="{{ query }}">
+            </div>
+            <div class="kn-search-results" data-module="csirohubtheme_search_kn" data-module-query="{{ query }}">
+            </div>
       </div>
     {% endblock %}
 {% endif %}
