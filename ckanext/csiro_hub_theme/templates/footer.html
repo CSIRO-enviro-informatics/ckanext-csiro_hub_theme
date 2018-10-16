@@ -1,5 +1,12 @@
 {% ckan_extends %}
 
+{% block footer_links_ckan %}
+   <li><a href="https://confluence.csiro.au/display/LWCH/Digital+Asset+Management">About Digital Asset Management Committee</a></li>
+   <li><a href="mailto:lw-dam-support@csiro.au?subject=Digital asset registry help or feedback">Got feedback or need help?</a></li>
+   {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+   <li><a href="{{ api_url }}">{{ _('CKAN API Docs') }}</a></li>
+{% endblock %}
+
 {% block footer_attribution %}
   <!-- FIXME: I can't even CSS -->
   <!--<style>
