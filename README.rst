@@ -36,6 +36,7 @@ ckanext-csiro_hub_theme
    What does it do? What features does it have?
    Consider including some screenshots or embedding a video!
 
+Look and Feel Themeing of an internal CSIRO L&W CKAN instance
 
 ------------
 Requirements
